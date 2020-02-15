@@ -19,4 +19,4 @@ if (os.path.exists('/home/brady/workspace/cfgfiles/email.yml')):
 	newKey = response.text[21:29]
 else:
 	print("Config file not available. Exiting.")
-	Sys.exit(1)
+	sys.exit(1)
