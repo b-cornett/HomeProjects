@@ -18,5 +18,5 @@ if (os.path.exists('/home/brady/workspace/cfgfiles/email.yml')):
 	response = requests.get(url, params=params, headers=headers)
 	newKey = response.text[21:29]
 else:
-	System.out.println("Config file not available. Exiting.")
+	print("Config file not available. Exiting.")
 	Sys.exit(1)
