@@ -18,7 +18,7 @@ def sendEmail(recipients, inpSubject='Test Sub', inpText='Test'):
                         cfg = yaml.safe_load(f)
                 user = cfg['credentials']['user']
                 yag = yagmail.SMTP({user:'RaspberryPi'}, cfg['credentials']['password'])
-                yag.send(bcc=recipients, subject=inpSubject, contents=inpText)
+                yag.send(to=recipients, subject=inpSubject, contents=inpText)
         else:
                 print('\nUh oh! The config file is missing!\n')
                 sys.exit(1)
