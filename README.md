@@ -2,7 +2,7 @@
 Repository to store personal projects as I work on them
 
 *WeatherAPI* 
-Runs every day at 07:00 through a Linux crontab. (Want to update script for forecast for next five days, and allow for commandline input for which location to grab weather data from)
+Runs every day at 07:00 through a Linux crontab. (Want to update script for forecast for next five days, and allow for commandline input for which location to grab weather data from. Going to also check HTTP status code returned from API and implement logging)
 Eg: 0 7 * * * /home/brady/workspace/python/weatherAPI.py >> /tmp/weatherAPI.out 2&>1
 
 **#LOG**  
