@@ -1,4 +1,4 @@
-#HomeProjects  
+# HomeProjects  
 Repository to store personal projects as I work on them
 
 **WeatherAPI**
@@ -13,7 +13,7 @@ Eg: 0 7 * * * /home/brady/workspace/python/weatherAPI.py >> /tmp/weatherAPI.out 
 * HTML Email for formatting
 * Logging instead of print statements
 
-**LOG**  
+_LOG_  
 -02/12/2020 -- Pushed up first version of pyMail.py  
 -02/15/2020 -- Pushed up emailTest script to test pyMail.py. Also pushing up beginning of weatherAPI.py  
 -05/30/2020 -- Pushed changes to pyMail.py and weatherAPI.py
