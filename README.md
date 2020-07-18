@@ -6,6 +6,7 @@ Repository to store personal projects as I work on them
 - uses a YML configuration file for most variables
 
 Eg: 0 7 * * * /home/brady/workspace/python/weatherAPI.py $POSTAL_CODE >> /tmp/weatherAPI.out 2&>1
+
 (Postal code is manually entered into the crontab)
 
 *Future Updates*
