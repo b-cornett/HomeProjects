@@ -16,7 +16,7 @@ Eg: 0 7 * * * /home/brady/workspace/python/weatherAPI.py $POSTAL_CODE >> /tmp/we
 * HTML Email for better formatting
 
 _LOG_  
--02/12/2020 -- Pushed up first version of pyMail.py  
--02/15/2020 -- Pushed up emailTest script to test pyMail.py. Also pushing up beginning of weatherAPI.py  
--05/30/2020 -- Pushed changes to pyMail.py and weatherAPI.py
--07/18/2020 -- Pushed changes to weatherAPI.py, pushed up pyLog.py. Weather API program now has error emails, checks HTTP response codes, has a commandline argument for zip code and uses logging instead of print statements
+- 02/12/2020 -- Pushed up first version of pyMail.py  
+- 02/15/2020 -- Pushed up emailTest script to test pyMail.py. Also pushing up beginning of weatherAPI.py  
+- 05/30/2020 -- Pushed changes to pyMail.py and weatherAPI.py
+- 07/18/2020 -- Pushed changes to weatherAPI.py, pushed up pyLog.py. Weather API program now has error emails, checks HTTP response codes, has a commandline argument for zip code and uses logging instead of print statements
