@@ -5,7 +5,8 @@ Repository to store personal projects as I work on them
 - runs every day at 07:00 through a Linux crontab
 - uses a YML configuration file for most variables
 
-Eg: 0 7 * * * /home/brady/workspace/python/weatherAPI.py >> /tmp/weatherAPI.out 2&>1
+Eg: 0 7 * * * /home/brady/workspace/python/weatherAPI.py $POSTAL_CODE >> /tmp/weatherAPI.out 2&>1
+(Postal code is manually entered into the crontab)
 
 *Future Updates*
 * Error Email
