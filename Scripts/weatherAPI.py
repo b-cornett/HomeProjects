@@ -12,7 +12,7 @@ from pyLog import log
 #Function for checking response codes from API Calls
 def check(statusCode, apiName):
 	if (statusCode != 200):
-		log("Invalid Status Code Returned From "+apiName, logpath, logname, "ERROR")
+		log("Invalid Status Code Returned From "+apiName+": "+statusCode, logpath, logname, "ERROR")
 		errorEmail("Invalid Status Code Returned From "+apiName+": "+str(statusCode))
 		sys.exit(1)
 
@@ -21,14 +21,14 @@ def errorEmail(errorString):
 	subj = "ERROR - Daily Weather Email"
 	sendEmail(cfg['errorDistro'], subj, errorString)
 
-#TODO Function for computing date provided from API into day of the week
+#Function for computing date provided from API into day of the week
 def calculateDay(date):
-	newDate = str(date[9:10])
-	print(newDate)
-	newDate = str(newDate+" "+date[6:7])
-	print(newDate)
+	log("Processing input date: "+date, logpath, logname)
+	newDate = str(date[8:10])
+	newDate = str(newDate+" "+date[5:7])
 	newDate = str(newDate+" " +date[0:4])
-	print(newDate)
+	day = datetime.strptime(newDate, '%d %m %Y').weekday() 
+	return (calendar.day_name[day]) 
 
 #Function for parsing each days forecast data
 def parseForecastData(forecast):
