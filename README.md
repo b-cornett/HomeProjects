@@ -2,7 +2,7 @@
 Repository to store personal projects as I work on them
 
 **WeatherAPI**
-- runs every day at 07:00 through a Linux crontab
+- runs every day at 07:00 (Mountain Time) through a Linux crontab
 - uses a YML configuration file for most variables
 - utilizes custom built pyMail and pyLog modules
 - has error reporting through emails
