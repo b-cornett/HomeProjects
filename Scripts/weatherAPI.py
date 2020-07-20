@@ -32,15 +32,15 @@ def calculateDay(date):
 
 #Function for parsing each days forecast data
 def parseForecastData(forecast):
-	finalForecast = "5 Day Forecast:\n========================\n"
+	finalForecast = "<h1 style='text-align:center;'>5 Day Forecast</h1><hr>"
 	for i in range(5):
 		day = calculateDay(str(forecast['DailyForecasts'][i]['Date'])[0:10])
-		finalForecast = finalForecast + str(forecast['DailyForecasts'][i]['Date'])[0:10]+"\n"
-		finalForecast = finalForecast + "Maximum: "+str(forecast['DailyForecasts'][i]['Temperature']['Maximum']['Value'])+"    "+"Minimum: "+str(forecast['DailyForecasts'][i]['Temperature']['Minimum']['Value'])+"\n"
-		finalForecast = finalForecast + "Day:\n"
-		finalForecast = finalForecast + "Precipitation: "+str(forecast['DailyForecasts'][i]['Day']['HasPrecipitation'])+"    "+"Weather: "+str(forecast['DailyForecasts'][i]['Day']['IconPhrase'])+"\n"
-		finalForecast = finalForecast + "Night:\n"
-		finalForecast = finalForecast + "Precipitation: "+str(forecast['DailyForecasts'][i]['Night']['HasPrecipitation'])+"    "+"Weather: "+str(forecast['DailyForecasts'][i]['Night']['IconPhrase'])+"\n\n"
+		finalForecast = finalForecast + "<h2>"+day+": "+str(forecast['DailyForecasts'][i]['Date'])[0:10]+"</h2>"
+		finalForecast = finalForecast + "<p>&nbsp;&nbsp;Max: "+str(forecast['DailyForecasts'][i]['Temperature']['Maximum']['Value'])+"&nbsp;&nbsp;"+" Min: "+str(forecast['DailyForecasts'][i]['Temperature']['Minimum']['Value'])+"</p>"
+		finalForecast = finalForecast + "<h3>Day time:</h3>"
+		finalForecast = finalForecast + "<p>&nbsp;&nbsp;Precipitation: "+str(forecast['DailyForecasts'][i]['Day']['HasPrecipitation'])+"<br>&nbsp;&nbsp;"+"Weather: "+str(forecast['DailyForecasts'][i]['Day']['IconPhrase'])+"</p>"
+		finalForecast = finalForecast + "<h3>Night time:</h3>"
+		finalForecast = finalForecast + "<p>&nbsp;&nbsp;Precipitation: "+str(forecast['DailyForecasts'][i]['Night']['HasPrecipitation'])+"<br>&nbsp;&nbsp;"+"Weather: "+str(forecast['DailyForecasts'][i]['Night']['IconPhrase'])+"</p><br>"
 	return finalForecast
 
 
@@ -83,7 +83,8 @@ if (os.path.exists('/home/brady/workspace/cfgfiles/weatherAPI.yml')):
 	forecast = json.loads(forecastResponse.text)
 	forecast = parseForecastData(forecast)
 
-	currCondsContent = "CURRENT CONDITIONS:\n========================\nTemp: "+str(currCondsData['Temperature']['Imperial']['Value'])+"\nWeather: "+currCondsData['WeatherText']+"\nPrecipitation: "+str(currCondsData['PrecipitationType'])+"\n========================\n\n"
+	currCondsContent = "<h1 style='text-align:center;'>CURRENT CONDITIONS</h1>"
+	currCondsContent = currCondsContent + "<hr><h3>Temp: "+str(currCondsData['Temperature']['Imperial']['Value'])+"</h3><h3>Weather: "+currCondsData['WeatherText']+"</h3><h3>Precipitation: "+str(currCondsData['PrecipitationType'])+"</h3>"
 
 	now = datetime.now()
 	log("Sending daily email", logpath, logname)
