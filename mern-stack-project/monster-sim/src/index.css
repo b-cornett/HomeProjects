@@ -1,0 +1,99 @@
+#root {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+#header {
+}
+h1 {
+  color: #900000;
+  text-shadow: 2px 1px 3px #333333;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  letter-spacing: 2px;
+  margin: auto;
+  float: left;
+  margin-left: 20%;
+  font-size: 40px;
+  padding-top: 5px;
+}
+
+.menuBar {
+  width: 4px;
+  height: 30px;
+  background-color: #333;
+  margin-top: 6px;
+  margin-left: 6px;
+  transition: 0.4s;
+  border-radius: 25px;
+  float: left;
+}
+#bar1 {
+  margin-left: 10px;
+}
+.menuIcon {
+  width: 45px;
+  float: left;
+  height: 43px;
+  margin-left: 20px;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+.menuIcon:hover {
+  cursor: pointer;
+  background-color: #fdd;
+}
+
+.listOfRoutes {
+  list-style-type: none;
+  padding: 0px;
+}
+.menuButtons {
+  width: 150px;
+  height: 50px;
+  color: #900000;
+  text-shadow: 1px 1px 2px #333333;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.menuButtons:hover {
+  background-color: #fff;
+}
+#title {
+  text-align: center;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+#lineBreak {
+  background-color: #900000;
+  margin-top: 30px;
+  height: 2px;
+  box-shadow: 2px 2px 3px #333333;
+  clear: both;
+  width: 100%;
+}
+
+#footer {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 1px #cccccc;
+  text-align: center;
+  color: #aaaaaa;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  .menuIcon {
+    margin-top: none;
+  }
+}
