@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import About from "./About";
 import Simulation from "./Simulation";
-import { Router, Route, Switch } from "react-router";
+import { Route, Switch } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 
 const pages = [
