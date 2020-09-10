@@ -23,3 +23,9 @@ _LOG_
 - 07/20/2020 -- Pushed final updates to weatherAPI.py. Completed all desired updates.
 
 **MERN-Project**
+- MERN stack project for DND Monster Simulator for DMs to use for encounters.
+
+
+*Future Updates*
+- Node backend for interacting with MongoDB containing monster information
+- Page for "The Tavern".. A place where people can find online DnD groups to join based on a listing created by a DM
