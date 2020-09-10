@@ -21,3 +21,5 @@ _LOG_
 - 05/30/2020 -- Pushed changes to pyMail.py and weatherAPI.py
 - 07/18/2020 -- Pushed changes to weatherAPI.py, pushed up pyLog.py. Weather API program now has error emails, checks HTTP response codes, has a commandline argument for zip code and uses logging instead of print statements
 - 07/20/2020 -- Pushed final updates to weatherAPI.py. Completed all desired updates.
+
+**MERN-Project**

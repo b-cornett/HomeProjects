@@ -1,0 +1,14 @@
+{
+  "name": "mern-stack-project",
+  "version": "1.0.0",
+  "description": "mern project package",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brady Cornett",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
